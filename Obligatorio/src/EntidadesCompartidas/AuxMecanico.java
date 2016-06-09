@@ -18,7 +18,7 @@ public class AuxMecanico extends Servicio {
         return CostoRepuestos;
     }
 
-    //comentario prueba
+    //comentario prueba 2
     public void setCostoRepuestos(double CostoRepuestos) {
         this.CostoRepuestos = CostoRepuestos;
     }
