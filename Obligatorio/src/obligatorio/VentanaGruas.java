@@ -13,7 +13,7 @@ import java.awt.Dimension;
 import javax.swing.*;
 import java.awt.event.*;
 
-public class VentanaGruas extends JFrame{
+public class VentanaGruas extends JInternalFrame{
     
     private static VentanaGruas instancia = null;
     
@@ -36,19 +36,24 @@ public class VentanaGruas extends JFrame{
         inicializarComponentes();
     }
     
-    private void inicializarComponentes() {
-    
-    setTitle("Grúas");
-    
+    protected void inicializarComponentes() {
+        setTitle("Grúas");
         
         
         
         
-    
-    setPreferredSize(new Dimension(400, 300));
-    pack();
-    setLocationRelativeTo(null);
-    setVisible(true);
+        
+        
+        
+        
+        
+        setClosable(true);
+        setMaximizable(true);
+        setIconifiable(true);
+        
+        setPreferredSize(new Dimension(700, 500));
+        pack();
+        setLocation(70, 70);
     }
     
     @Override

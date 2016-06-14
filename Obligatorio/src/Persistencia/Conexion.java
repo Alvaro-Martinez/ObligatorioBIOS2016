@@ -18,7 +18,7 @@ public class Conexion {
     public static Connection AbrirConexion() throws Exception {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://LocalHost:3306/Obligatorio", "root", "1234");
+            con = DriverManager.getConnection("jdbc:mysql://LocalHost:3306/ObligatorioJavaEsc", "root", "1234");
             return con;
         } catch (Exception ex) {
             throw new Exception(ex);

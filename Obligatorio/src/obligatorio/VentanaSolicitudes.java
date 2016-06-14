@@ -13,7 +13,7 @@ import java.awt.Dimension;
 import javax.swing.*;
 import java.awt.event.*;
 
-public class VentanaSolicitudes extends JFrame{
+public class VentanaSolicitudes extends JInternalFrame{
     
     private static VentanaSolicitudes instancia = null;
     
@@ -36,18 +36,24 @@ public class VentanaSolicitudes extends JFrame{
         inicializarComponentes();
     }
     
-    private void inicializarComponentes() {
-        
-    setTitle("Solicitudes");
-        
+    protected void inicializarComponentes() {
+        setTitle("Solicitudes");
         
         
         
-    
-    setPreferredSize(new Dimension(400, 300));
-    pack();
-    setLocationRelativeTo(null);
-    setVisible(true);
+        
+        
+        
+        
+        
+        
+        setClosable(true);
+        setMaximizable(true);
+        setIconifiable(true);
+        
+        setPreferredSize(new Dimension(700, 500));
+        pack();
+        setLocation(50, 50);
     }
     
     @Override

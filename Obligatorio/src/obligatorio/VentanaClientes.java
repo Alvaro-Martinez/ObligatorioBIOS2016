@@ -5,14 +5,14 @@
  */
 package obligatorio;
 
-import java.awt.Dimension;
+import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
 /**
  *
  * @author Álvaro
  */
-public class VentanaClientes extends JFrame {
+public class VentanaClientes extends JInternalFrame {
     
     protected JLabel lblTitulo;
     protected JLabel lblCedula;
@@ -43,7 +43,6 @@ public class VentanaClientes extends JFrame {
         return instancia;
     }
     
-    
     protected VentanaPrincipal ventanaPrincipal;
     
     
@@ -53,19 +52,24 @@ public class VentanaClientes extends JFrame {
         inicializarComponentes();
     }
     
-    private void inicializarComponentes() {
-        
-    setTitle("Clientes");
-    
+    protected void inicializarComponentes() {
+        setTitle("Clientes");
         
         
         
         
-    
-    setPreferredSize(new Dimension(400, 300));
-    pack();
-    setLocationRelativeTo(null);
-    setVisible(true);
+        
+        
+        
+        
+        
+        setClosable(true);
+        setMaximizable(true);
+        setIconifiable(true);
+        
+        setPreferredSize(new Dimension(700, 500));
+        pack();
+        setLocation(10, 10);
     }
     
     @Override
