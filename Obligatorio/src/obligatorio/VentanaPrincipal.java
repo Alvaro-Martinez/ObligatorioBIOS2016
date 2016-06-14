@@ -50,12 +50,12 @@ public class VentanaPrincipal extends JFrame {
         setJMenuBar(barraMenus);
         
         menuClientes = new JMenu("Clientes");
-//        menuClientes.setMnemonic('C');
+        menuClientes.setMnemonic('C');
         barraMenus.add(menuClientes);
         
         itemABMClientes = new JMenuItem("ABM Clientes");
-//        itemABMClientes.setMnemonic('L');
-//        itemABMClientes.setAccelerator(KeyStroke.getKeyStroke('L', InputEvent.CTRL_MASK + InputEvent.ALT_MASK));
+        itemABMClientes.setMnemonic('L');
+        itemABMClientes.setAccelerator(KeyStroke.getKeyStroke('L', InputEvent.CTRL_MASK + InputEvent.ALT_MASK));
         itemABMClientes.addActionListener(new ActionListener() {
             
             @Override
@@ -71,8 +71,8 @@ public class VentanaPrincipal extends JFrame {
         // VEHICULOS ...........................................................
         
         itemVehiculos = new JMenuItem("Vehículos");
-//        itemVehiculos.setMnemonic('V');
-//        itemVehiculos.setAccelerator(KeyStroke.getKeyStroke('V', InputEvent.CTRL_MASK + InputEvent.ALT_MASK));
+        itemVehiculos.setMnemonic('V');
+        itemVehiculos.setAccelerator(KeyStroke.getKeyStroke('V', InputEvent.CTRL_MASK + InputEvent.ALT_MASK));
         itemVehiculos.addActionListener(new ActionListener() {
             
             @Override
@@ -86,12 +86,12 @@ public class VentanaPrincipal extends JFrame {
         // SOLICITUDES .........................................................        
         
         menuSolicitudes = new JMenu("Solicitudes");
-//        menuSolicitudes.setMnemonic('S');
+        menuSolicitudes.setMnemonic('S');
         barraMenus.add(menuSolicitudes);
         
         itemAlgo = new JMenuItem("Algo");
-//        itemAlgo.setMnemonic('A');
-//        itemAlgo.setAccelerator(KeyStroke.getKeyStroke('A', InputEvent.CTRL_MASK + InputEvent.ALT_MASK));
+        itemAlgo.setMnemonic('A');
+        itemAlgo.setAccelerator(KeyStroke.getKeyStroke('A', InputEvent.CTRL_MASK + InputEvent.ALT_MASK));
         itemAlgo.addActionListener(new ActionListener() {
             
             @Override
@@ -105,12 +105,12 @@ public class VentanaPrincipal extends JFrame {
         // SERVICIOS............................................................
         
         menuServicios = new JMenu("Servicios");
-//        menuServicios.setMnemonic('E');
+        menuServicios.setMnemonic('E');
         barraMenus.add(menuServicios);
         
         itemOperarios = new JMenuItem("Operarios");
-////        itemOperarios.setMnemonic('P');
-////        itemOperarios.setAccelerator(KeyStroke.getKeyStroke('P', InputEvent.CTRL_MASK + InputEvent.ALT_MASK));
+        itemOperarios.setMnemonic('P');
+        itemOperarios.setAccelerator(KeyStroke.getKeyStroke('P', InputEvent.CTRL_MASK + InputEvent.ALT_MASK));
         itemOperarios.addActionListener(new ActionListener() {
             
             @Override
@@ -124,8 +124,8 @@ public class VentanaPrincipal extends JFrame {
         menuServicios.add(new JSeparator());
         
         itemGruas = new JMenuItem("Gruas");
-//        itemGruas.setMnemonic('G');
-//        itemGruas.setAccelerator(KeyStroke.getKeyStroke('G', InputEvent.CTRL_MASK + InputEvent.ALT_MASK));
+        itemGruas.setMnemonic('G');
+        itemGruas.setAccelerator(KeyStroke.getKeyStroke('G', InputEvent.CTRL_MASK + InputEvent.ALT_MASK));
         itemGruas.addActionListener(new ActionListener() {
             
             @Override
